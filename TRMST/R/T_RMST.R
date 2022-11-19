@@ -23,6 +23,15 @@
 #' varing<-list(ZC=c("transplant"),ref=c(transplant=0))
 #' T_RMST(heartdata,time="time",tstop="tstop",id="id",status="status",event="event",fixed,varing)
 T_RMST<-function(data,time,tstop,id,status,event,fixed,varing){
+  #check to see if the package is already installed
+  if (is.element("survival", installed.packages()[,1])==FALSE){
+    install.packages("survival")
+  }
+  require(survival) #same as library statement
+  if (is.element("geepack", installed.packages()[,1])==FALSE){
+    install.packages("geepack")
+  }
+  require(geepack)
   ##Adds a column of censoring status
   Censor<-function(data,id,status)
   {
