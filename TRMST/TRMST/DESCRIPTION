@@ -1,7 +1,6 @@
 Package: TRMST
 Type: Package
-Title: Restricted mean survival time (RMST) with time-dependent
-        covariates
+Title: Restricted mean survival time (RMST) with time-dependent covariates
 Version: 0.1.0
 Authors@R: 
   c(person("Chengfeng", "Zhang", email = "2714311212@qq.com", role = "aut"),
@@ -19,5 +18,4 @@ Roxygen: list(markdown = TRUE)
 Author: Chengfeng Zhang [aut],
   Zheng Chen [cre],
   Yawen Hou [ctb]
-NeedsCompilation: no
-Packaged: 2022-12-05 07:43:28 UTC; Dell
+
